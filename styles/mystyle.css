@@ -19,7 +19,7 @@ body {
 }
 
 /* 容器样式 - 移动端基础 */
-#container {
+.container {
   background-color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@ body {
 }
 
 /* 图片样式 */
-#qr {
+.qr {
   border-radius: 15px;
   width: 100%;
   height: auto;
@@ -62,7 +62,7 @@ p {
 
 /* 桌面端增强样式 */
 @media (min-width: 768px) {
-  #container {
+  .container {
     padding: 1rem 1rem 2rem;
     width: min(320px, 25vw);
   }
@@ -79,14 +79,14 @@ p {
 
 /* 超大屏幕优化 */
 @media (min-width: 1440px) {
-  #container {
+  .container {
     width: 320px;
   }
 }
 
 /* 极小型设备优化 (320px及以下) */
 @media (max-width: 320px) {
-  #container {
+  .container {
     width: 90vw;
   }
 
