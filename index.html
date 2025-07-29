@@ -3,30 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/mystyle.css" />
+    <!-- displays site properly based on user's device -->
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | QR code component</title>
+    <link rel="stylesheet" href="mystyle.css" />
+
+    <title>Frontend Mentor | Blog preview card</title>
   </head>
   <body>
-    <main>
-      <div class="container">
+    <div class="container">
+      <img
+        src="illustration-article.svg"
+        class="main-image"
+        alt="Article illustration"
+      />
+
+      <h2>Learning</h2>
+
+      Published 21 Dec 2023
+
+      <h1>HTML & CSS foundations</h1>
+      <p>
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+
+      <div class="author">
         <img
-          class="qr"
-          src="./images/image-qr-code.png"
-          alt="QR code to visit Frontend Mentor"
+          src="image-avatar.webp"
+          alt="Avatar of the author"
+          class="avatar"
         />
-        <h1>Improve your front-end skills by building projects</h1>
-        <p>
-          Scan the QR code to visit Frontend Mentor and take your coding skills
-          to the next level
-        </p>
+
+        <span class="author-name">Greg Hooper</span>
       </div>
-    </main>
+    </div>
   </body>
 </html>
